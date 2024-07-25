@@ -1,0 +1,532 @@
+* {
+    list-style: none;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #333;
+}
+
+.examWrap {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.Etop {
+    width: 100%;
+    height: 90px;
+    background-color: #75B7F8;
+    flex-grow: 0;
+
+    & .eTopJiaojuan {
+        width: 200px;
+        position: absolute;
+        top: 35px;
+        display: inline-block;
+        vertical-align: top;
+        color: #FDFE03;
+        line-height: 28px;
+        right: 240px;
+        font-family: 微软雅黑, 宋体;
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    & .avatar {
+        float: left;
+        margin: 14px 0 0 10px;
+        border: 2px #fff solid;
+        border-radius: 31px;
+        height: 64px;
+        overflow: hidden;
+
+        img {
+            width: 60px;
+            height: 60px;
+        }
+    }
+
+    & .userMsg {
+        float: left;
+        color: #fff;
+        padding-left: 10px;
+        padding-top: 14px;
+        font-size: 16px;
+        line-height: 28px;
+        font-family: 微软雅黑, 宋体;
+        font-weight: 700;
+    }
+
+    & .topTitle {
+        position: absolute;
+        left: 270px;
+        color: #fff;
+        text-align: center;
+        font-size: 16px;
+        margin-left: 50px;
+        padding-top: 40px;
+        font-family: 微软雅黑, 宋体;
+        font-weight: 700;
+
+        & .topToFirst {
+            color: #fff;
+        }
+    }
+
+    & .eTopRight {
+        float: right;
+        margin-right: 260px;
+        position: relative;
+
+        & .eTopJiaojuanBox {
+            margin-top: 35px;
+            position: relative;
+            display: inline-block;
+            vertical-align: top;
+            padding-right: 120px;
+        }
+
+        & .eTopJiaojuanBox {
+            cursor: pointer;
+            position: absolute;
+            width: 80px;
+            text-align: center;
+            line-height: 28px;
+        }
+
+        & .eTopJiaojuanImg {
+            width: 120px;
+            height: 36px;
+            cursor: pointer;
+        }
+    }
+}
+
+.eTopHeaderImg {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    vertical-align: top;
+    height: 26px;
+    cursor: pointer;
+    z-index: 99;
+}
+
+.eContent {
+    display: flex;
+    flex-grow: 1;
+    height: calc(100vh - 90px);
+    & .eConLeft {
+        width: 280px;
+        min-width: 280px;
+        height: 100%;
+        flex-grow: 0;
+        overflow-y: auto;
+        padding-top: 6px;
+        display: flex;
+        flex-direction: column;
+
+        & .eConSel {
+            margin-bottom: 8px;
+            position: relative;
+            width: 100%;
+
+            h3 {
+                font-size: 14px;
+                background: linear-gradient(#498fbf, #66a9d8);
+                padding-left: 10px;
+                line-height: 30px;
+                font-weight: bold;
+            }
+
+            & .eConOneSelSq {
+                position: absolute;
+                right: 12px;
+                top: 4px;
+                cursor: pointer;
+
+                &>img {
+                    vertical-align: baseline;
+                }
+
+                span {
+                    font-size: 14px;
+                    margin-left: 4px;
+                }
+            }
+
+            & .qlist {
+                background: #fff;
+                padding-left: 10px;
+                margin-bottom: 2px;
+                border-right: 1px #99DCFA solid;
+                border-bottom: 1px #99DCFA solid;
+                padding-bottom: 4px;
+                display: flex;
+                justify-content: flex-start;
+                flex-wrap: wrap;
+
+                & .qlistItem {
+                    color: rgb(44, 63, 232);
+                    cursor: pointer;
+                    font-size: 14px;
+                    width: 30px;
+                    height: 30px;
+                    line-height: 26px;
+                    text-align: center;
+                    display: inline-block;
+                    vertical-align: top;
+                    border:1px solid #fff;
+
+                    & .qlistItemText {
+                        font-size: 14px;
+                        font-family: 微软雅黑, 宋体;
+                        text-decoration: underline;
+
+                        & .qlistItemXing {
+                            color: #f00;
+                            text-decoration: none;
+                            display: inline-block;
+                            vertical-align: top;
+                        }
+                    }
+                }
+            }
+        }
+
+        & .examTip {
+            ul {
+                padding-left: 10px;
+                margin-bottom: 50px;
+
+                li {
+                    color: #FF4642;
+                    font-size: 18px;
+                    line-height: 24px;
+                    list-style: none;
+                }
+            }
+        }
+
+        & .enterLaw {
+            width: 150px;
+            height: 36px;
+            line-height: 36px;
+            background: url("../../../../public/image/exam/btn-falvfaguihuibian.png");
+            background-size: 100% 100%;
+            font-size: 16px;
+            text-align: center;
+            margin-left: 58px;
+            cursor: pointer;
+        }
+    }
+
+    & .isShowSider {
+        width: 10px;
+        height: 100%;
+        border-left: 1px #9fb7f7 solid;
+        border-right: 1px #9fb7f7 solid;
+        flex-grow: 0;
+
+        img {
+            padding-top: 200px;
+            cursor: pointer;
+        }
+    }
+
+    & .eConRight {
+        height: 100%;
+        flex-grow: 1;
+        padding: 10px;
+        overflow-y: auto;
+        position: relative;
+
+        & .eConRightBtnGroup {
+            position: relative;
+            border-radius: 6px 0 0 0;
+            background: #fff;
+            border-bottom: 1px #0F7AAB solid;
+            display: flex;
+
+            & .ePaper {
+                vertical-align: top;
+                height: 29px;
+                margin-right: 3px;
+                width: 109px;
+                font-size: 14px;
+                font-weight: bolder;
+                line-height: 29px;
+                text-align: center;
+                color: #000;
+            }
+
+            & .efengeWrap {
+                vertical-align: top;
+
+                & .efengeBtn {
+                    width: 58px;
+                    height: 21px;
+                    cursor: pointer;
+                    font-size: 12px;
+                    display: inline-block;
+                    vertical-align: top;
+                    line-height: 21px;
+                    margin-top: 7px;
+                    margin-left: 3px;
+                    text-align: center;
+                    border-bottom: none;
+                }
+
+                & .efengeBtnMini {
+                    width: 58px;
+                    height: 21px;
+                    cursor: pointer;
+                    font-size: 12px;
+                    vertical-align: top;
+                    line-height: 21px;
+                    margin-top: 7px;
+                    margin-left: 3px;
+                    text-align: center;
+                    border-bottom: none;
+                    display: none;
+                }
+            }
+
+            & .efengeWrap:hover .efengeBtnMini {
+                display: inline-block;
+            }
+        }
+
+        & .eQuesTip {
+            font-weight: 400;
+            line-height: 1;
+            padding: 20px 0;
+            padding-left: 4px;
+            margin-left: 6px;
+            margin-right: 6px;
+            border-bottom: 1px #9fb7f7 solid;
+            position: relative;
+
+            & .eMaxBtn {
+                width: 89px;
+                height: 27px;
+                bottom: 15px;
+                right: 20px;
+                cursor: pointer;
+                display: inline-block;
+                vertical-align: middle;
+                position: absolute;
+
+                span {
+                    font-size: 14px;
+                    color: #000;
+                    position: absolute;
+                    top: 0;
+                    width: 89px;
+                    text-align: center;
+                    line-height: 27px;
+                    white-space: nowrap;
+                    padding-left: 23px;
+                }
+            }
+        }
+
+        & .eQuesIndex {
+            padding-left: 10px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        & .eQuesStem {
+            width: 820px;
+            position: relative;
+            z-index: 2;
+            padding-left: 35px;
+            padding-right: 10px;
+            line-height: 28px;
+            color: #000;
+            white-space: pre-wrap;
+        }
+
+        & .eQuesOptionWrap {
+            padding-left: 45px;
+            padding-bottom: 60px;
+            padding-top: 15px;
+        }
+
+        & .zhuguanQues {
+            border: none;
+            white-space: pre-wrap;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            color: #333333;
+            padding: 20px 30px;
+            background-color: #fff;
+        }
+
+        & .eQuesNum {
+            cursor: pointer;
+            font-size: 16px;
+            display: inline-block;
+            width: 70px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            color: #3794FE;
+            margin: 7px 1px 10px 18px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: #3794FE;
+        }
+
+        & .eMaxBtnZG {
+            width: 60px;
+            height: 23px;
+            text-align: center;
+            line-height: 23px;
+            background-size: 100% 100%;
+            top: 10px;
+            margin-right: 5px;
+            cursor: pointer;
+            display: inline-block;
+            position: absolute;
+            font-size: 14px;
+        }
+
+        & .eQuesTipZG {
+            font-weight: 400;
+            line-height: 1& .5;
+            padding: 10px 0 20px;
+            margin-left: 20px;
+            position: relative;
+
+            & .prompt {
+                font-size: 16px;
+                color: #666;
+                margin: 10px 18px 10px 0;
+            }
+        }
+
+        & .eQuesTextArea {
+            width: 95%;
+            height: 210px;
+            font-size: 20px;
+            color: #333333;
+            padding: 19px 21px;
+            border: none;
+            margin-left: 30px;
+            outline: none;
+            margin-bottom: 100px;
+            resize: none;
+        }
+
+        & .quesBtmBtnWrap {
+            width: 90%;
+            padding-left: 135px;
+            position: absolute;
+            bottom: 0;
+            z-index: 8;
+            padding-bottom: 20px;
+            padding-top: 5px;
+
+            & .prevBtn,
+            & .nextBtn {
+                cursor: pointer;
+                margin-right: 26px;
+                display: inline-block;
+                vertical-align: middle;
+                width: 85px;
+                height: 31px;
+                font-size: 14px;
+                position: relative;
+                text-align: center;
+                line-height: 31px;
+            }
+
+            & .eSelOptionWrap {
+                display: inline-block;
+                vertical-align: middle;
+                margin-bottom: 0;
+
+                li {
+                    display: inline-block;
+                    vertical-align: top;
+                    font-size: 16px;
+                    margin-right: 20px;
+                    list-style: none;
+                    margin-bottom: 5px !important;
+                }
+            }
+        }
+    }
+}
+
+.submitModalMask {
+    width: 100vw;
+    height: 100vh;
+    z-index: 999999;
+    background: rgba(0, 0, 0, 0.50);
+    border: 1px solid #979797;
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    & .submitModal {
+        width: 526px;
+        height: 291px;
+        z-index: 1000;
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+
+        & .submitMsg {
+            width: 450px;
+            height: 40px;
+            display: inline-block;
+            margin: 24px auto auto 24px;
+            clear: both;
+        }
+
+        & .submitModalCon {
+            display: flex;
+
+            & .eSubIcon {
+                width: 130px;
+                height: 135px;
+                margin: 25px 0px auto 45px;
+            }
+
+            & .eSubConRight {
+                width: 280px;
+                margin: 40px auto auto 40px;
+
+                & .eSubText {
+                    color: red;
+                    margin-bottom: 30px;
+                    font-size: 16px;
+                    font-weight: bolder;
+                    line-height: 24px;
+                    font-family: "\5FAE\8F6F\96C5\9ED1", "\5B8B\4F53";
+                }
+
+                & .eSubBtn {
+                    cursor: pointer;
+                    width: 84px;
+                    height: 31px;
+                    display: inline-block;
+                    font-size: 14px;
+                    color: #FFFFFF;
+                    text-align: center;
+                    text-align: center;
+                    line-height: 31px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,121 @@
+.loginModal{
+    z-index: 99999;
+    :global {
+        .ant-modal-content{
+            border-radius:15px!important;
+        }
+    }
+    .btmText{
+        text-align: center;
+        color: #ccc;
+        font-size: 12px;
+        width: 88%;
+        span{
+            color: #667cff;
+            cursor: pointer;
+        }
+    }
+}
+.logEleWrap{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.DividerOne{
+    :global{
+        .ant-divider-inner-text{
+            color: #ccc!important;
+            font-size: 12px;
+        }
+    }
+}
+.logWeChatIcon{
+    width: 44px;
+    height: 44px;
+    background-color: #eee;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    svg{
+        width: 22px;
+        height: 22px;
+    }
+}
+.btmCloseCircle{
+    position: absolute;
+    bottom: -40px;
+    cursor: pointer;
+    svg {
+        width: 24px;
+        height: 24px;
+    }
+}
+.logModalTitle{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: bold;
+}
+.logLeftArrow{
+    margin-right: 5px;
+    cursor: pointer;
+    svg{
+        position: relative;
+        top: 1px;
+    }
+}
+.logBtmIcon{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    .logWeChatIcon{
+        margin: 0;
+    }
+    .logLockFill {
+        width: 44px;
+        height: 44px;
+        background-color: #eee;
+        border-radius: 50%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        svg {
+            width: 22px;
+            height: 22px;
+        }
+    }
+}
+.logErrTip{
+    width: 100%;
+    height: 24px;
+    padding-left: 15px;
+    color: red;
+    font-size: 12px;
+    text-align: left;
+    margin: 0;
+    line-height: 24px;
+    span{
+        color: #667cff!important;
+        float: right;
+        cursor: pointer;
+    }
+}
+.getLogName{
+    color: #667cff;
+    cursor: pointer;
+}
+.getLogNameFalse{
+    color: #888;
+}

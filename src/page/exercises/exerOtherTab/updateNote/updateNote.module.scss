@@ -1,0 +1,75 @@
+.noteOther {
+    padding: 10px 60px;
+
+    .noteBreadcrumb {
+        margin-bottom: 15px;
+
+        :global {
+            .ant-breadcrumb-link {
+                line-height: 1;
+            }
+        }
+    }
+}
+
+.noteOtherCardWrap {
+    :global {
+        .ant-card-body {
+            padding-top: 0;
+        }
+    }
+
+    margin-bottom: 20px;
+}
+
+.noteUserData {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 24px;
+
+    & img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 12px;
+    }
+
+    & .nameTime {
+        display: flex;
+        flex-direction: column;
+
+        & .username {
+            font-size: 14px;
+            color: #41485D;
+        }
+
+        & .dateTime {
+            font-size: 12px;
+            color: #9DA3B2;
+            padding-top: 10px;
+        }
+    }
+}
+
+.notetextarea {
+    width: 90%;
+    outline: none;
+    margin-left: 5%;
+    margin-top: 25px;
+    padding: 11px 15px 18px 20px;
+    background: #F7F8F9;
+    border-radius: 20px;
+    min-height: 80px;
+    box-sizing: border-box;
+    border: 1px solid #F7F8F9;
+    resize: none;
+}
+
+.noteBtn {
+    font-size: 14px;
+    margin-top: 10px;
+    float: right;
+    width: 120px;
+    margin-right: 5%
+}

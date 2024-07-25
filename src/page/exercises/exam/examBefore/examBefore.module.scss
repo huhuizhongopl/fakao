@@ -1,0 +1,366 @@
+:global {
+    input {
+        writing-mode: horizontal-tb !important;
+        text-rendering: auto;
+        color: -internal-light-dark(black, white);
+        letter-spacing: normal;
+        word-spacing: normal;
+        line-height: normal;
+        text-transform: none;
+        text-indent: 0px;
+        text-shadow: none;
+        display: inline-block;
+        text-align: start;
+        appearance: auto;
+        -webkit-rtl-ordering: logical;
+        cursor: text;
+        background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+        margin: 0em;
+        padding: 1px 2px;
+        border-width: 2px;
+        border-style: inset;
+        border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+        border-image: initial;
+    }
+
+    .bodyEF {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #2d6dae;
+    }
+
+    .endBack2 {
+        position: absolute;
+        // top: 50%;
+        left: 50%;
+        width: 1024px;
+        height: 100vh;
+        transform: translateX(-50%);
+        // margin-top: -384px;
+        overflow: hidden;
+        background: url(../../../../../public/image/examBefore/back.jpg) no-repeat;
+    }
+
+    .txttitle {
+        position: absolute;
+        top: 190px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .endtext {
+        display: block;
+        position: relative;
+        color: #255dad;
+        font-size: 24px;
+        font-weight: bolder;
+    }
+
+    .bg {
+        width: 850px;
+        height: 200px;
+        display: block;
+        margin: 0 auto;
+        background: url(../../../../../public/image/examBefore/02.png) no-repeat;
+    }
+
+    .buthome {
+        position: absolute;
+        top: 590px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .inphome {
+        width: 90px;
+        /* background: url(exam/images/submit.gif) repeat-x; */
+        border: 1px solid #cc6600;
+        color: #000000;
+        font-size: 13px;
+        cursor: pointer;
+        border-radius: 0px;
+        padding: 6px;
+    }
+
+    .ttop {
+        margin-bottom: 20px;
+    }
+
+    .lg_main {
+        position: absolute;
+        // top: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+        // margin-top: -384px;
+        width: 1024px;
+        height: 100vh;
+        background: url(../../../../../public/image/examBefore/back.gif) repeat-x;
+    }
+
+    .lg_header {
+        width: 100%;
+        height: 150px;
+        margin-top: 100px;
+        text-align: center;
+    }
+
+    .lg_header span {
+        font-size: 120px;
+        color: #F00;
+        font-family: Tahoma, Geneva, sans-serif;
+        font-weight: bold;
+    }
+
+    .lg_from {
+        width: 526px;
+        height: 291px;
+        margin: auto;
+        padding-top: 120px;
+        font-family: "瀹嬩綋";
+        font-size: 14px;
+        background: url(../../../../../public/image/examBefore/wzh.png) no-repeat;
+    }
+
+    .kcmc {
+        margin-top: -40px;
+        margin-bottom: 10px;
+        margin-left: 140px;
+        text-align: center;
+        color: red;
+        font-weight: bold;
+        font-size: 26px;
+    }
+
+    .shenfenz {
+        margin-left: 200px;
+        //margin-top:70px;
+    }
+
+    .zhenjian {
+        margin-left: 200px;
+        margin-top: 14px;
+    }
+
+    .buttonk {
+        width: 160px;
+        height: 30px;
+        margin-top: 30px;
+        margin-left: 270px;
+    }
+
+    .buttonDl {
+        background: url(../../../../../public/image/examBefore/login_0.jpg) no-repeat;
+        width: 75px;
+        height: 28px;
+        border: 0;
+        cursor: pointer;
+    }
+
+    .buttonDlOnlie {
+        // background: url(../../../../../public/image/examBefore/login_1.jpg) no-repeat;
+        width: 75px;
+        height: 28px;
+        border: 0;
+        cursor: pointer;
+    }
+
+    .buttonDlDown {
+        // background: url(../../../../../public/image/examBefore/login_2.jpg) no-repeat;
+        width: 75px;
+        height: 28px;
+        border: 0;
+        cursor: pointer;
+    }
+
+    .buttonCz {
+        background: url(../../../../../public/image/examBefore/reset_0.jpg) no-repeat;
+        width: 75px;
+        height: 28px;
+        border: 0;
+        cursor: pointer;
+        margin-left: 10px;
+    }
+
+    .buttonCzOnlie {
+        // background: url(../../../../../public/image/examBefore/reset_1.jpg) no-repeat;
+        width: 75px;
+        height: 28px;
+        border: 0;
+        cursor: pointer;
+    }
+
+    .buttonCzDown {
+        // background: url(../../../../../public/image/examBefore/reset_2.jpg) no-repeat;
+        width: 75px;
+        height: 28px;
+        border: 0;
+        cursor: pointer;
+    }
+
+    .version span {
+        margin-left: 900px;
+    }
+
+    .ksZwh {
+        height: 150px;
+        width: 220px;
+        border-bottom: 10px green solid;
+        border-left: 10px green solid;
+        float: right;
+        font-size: 700%;
+        color: #c45124;
+        text-align: center;
+    }
+
+    .mainback {
+        position: absolute;
+        width: 1024px;
+        height: 100vh;
+        // top: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+        // margin-top: -384px;
+        background: url(../../../../../public/image/examBefore/end.png) no-repeat;
+    }
+
+    .kspic {
+        position: absolute;
+        top: 20px;
+        left: 40px;
+        width: 100px;
+        height: 120px;
+        cursor: pointer;
+    }
+
+    .ksinfo {
+        position: absolute;
+        top: 25px;
+        left: 150px;
+        height: 120px;
+        font-size: 18px;
+        color: #0064aa;
+        font-family: "宋体";
+        font-weight: bold;
+        line-height: 30px;
+        word-spacing: 2px
+    }
+
+    .kstime {
+        position: absolute;
+        top: 61px;
+        right: 50px;
+        width: 260px;
+        height: 40px;
+        background: url(../../../../../public/image/examBefore/timeback.png) no-repeat;
+        color: #F00;
+        font-size: 16px;
+        font-family: "微软雅黑";
+        padding-top: 10px;
+        padding-left: 20px;
+        font-weight: bold;
+    }
+
+    #msgTip {
+        margin-left: 22px;
+    }
+
+    .ksname {
+        position: absolute;
+        top: 150px;
+        left: 212px;
+        width: 598px;
+        height: 31px;
+        background: url(../../../../../public/image/examBefore/bt.png) no-repeat;
+    }
+
+    .centerText {
+        position: absolute;
+        top: 195px;
+        left: 46px;
+        width: 929px;
+        height: 350px;
+        margin: 0 auto;
+        background-color: #FFF;
+        font-size: 12px;
+        overflow: auto;
+        border: 0;
+    }
+
+    .agree {
+        position: absolute;
+        text-align: center;
+        top: 730px;
+        left: 50px;
+    }
+
+    .kw {
+        left: 380px;
+    }
+
+    .cz {
+        left: 530px;
+    }
+
+    .kc {
+        position: absolute;
+        text-align: center;
+        top: 720px;
+        width: 141px;
+        height: 43px;
+        font-family: "\5FAE\8F6F\96C5\9ED1", "\5B8B\4F53";
+        font-size: 16px;
+        line-height: 43px;
+        font-weight: bold;
+        color: #FFFFFF;
+        background: url(../../../../../public/image/examBefore/enternextbutton.png) no-repeat;
+        border: none;
+        cursor: pointer
+    }
+
+    .MsoNormal {
+        margin: 0cm;
+        margin-bottom: .0001pt;
+        font-size: 10.5pt;
+        font-family: "Calibri", "sans-serif";
+        text-align: center;
+        text-indent: 6.0pt;
+        line-height: 18.0pt;
+        background: white;
+    }
+
+    .MsoListParagraph {
+        margin: 0cm;
+        margin-bottom: .0001pt;
+        font-size: 10.5pt;
+        font-family: "Calibri", "sans-serif";
+        margin-left: 21.0pt;
+        text-align: left;
+        text-indent: -21.0pt;
+        background: white;
+    }
+
+    .dialogBox1 {
+        background: url(../../../../../public/image/examBefore/ts_d.gif) no-repeat;
+        position: absolute;
+        width: 526px;
+        height: 291px;
+        left:0;
+        top: 0;
+        right:0;
+        bottom: 0;
+        margin: auto;
+        display: none;
+    }
+
+    .backBtn {
+        background: url(../../../../../public/image/examBefore/back.png);
+        width: 84px;
+        height: 31px;
+        position: absolute;
+        left: 70%;
+        top: 70%;
+        cursor: pointer;
+    }
+}
